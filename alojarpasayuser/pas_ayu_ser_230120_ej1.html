@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen 23-01-2020 / pasayuser / Ej1</title>
+    <link rel="stylesheet" href="hojaEstilos.css">
+</head>
+<body>
+    <header>
+        <h1>Inicicio del examen 23-01-2020 Alumno: Pasayuser</h1>
+        <figure>
+        <img src="Recursos/Recurso1.png" class="imagenresponsivepasayuser" alt="Imagen del logo del programa de edición GIMP" title="Imagen del logo gimp">
+        <figcaption>Imagen editada por pasayuser</figcaption>
+    </figure>
+        <div>
+            <a rel="license" class="licenciapasayuser" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+        </div>
+    </header>
+
+   <section class="seccion1pasayuser">
+       <div class="pasayuserContenedor1ConBordeVerde">
+        <picture >
+
+            <source media="(min-width: 500px)" srcset="Recursos/Recurso2.jpg">
+             <source media="(min-width: 400px)" srcset="Recursos/Recurso3.jpg">
+             <img src="Recursos/Recurso4.jpg" alt="Imagen retrocompatible" > 
+        </picture>
+       </div>
+       <div class="pasayuserContenedor2ConBordeAzul">
+            <button  id="botonpasayuser"></button>
+            <p id="incrementarpasayuser"></p>
+       </div>
+   </section>
+
+
+   <footer>
+       <div class="hijofooterpasayuser">
+           <button class="boton1pasayuser" id="multiplicarpasayuser"></button>
+           <div id="resultadopasayuser"></div>
+       </div>
+       <div class="hijofooterpasayuser">
+        <audio id="audio1" controls> 
+            <source src="Recursos/Recurso7.mp3" type="audio/mpeg"> 
+            <source src="Recursos/Recurso7.ogg" type="audio/ogg"> 
+            <source src="Recursos/Recurso7.wav" type="audio/wav">
+                 Tu navegador no soporta esta etiqueta HTML5 
+        </audio>
+        <button onclick="document.getElementById('audio1').play()">Reiniciar</button>
+       </div>
+       <div class="hijofooterpasayuser">
+           <a href="pas_ayu_ser_230120_ej2.html">Enlace al ejercicio 2</a>
+       </div>
+   </footer>
+
+
+   <script>
+   
+    
+    var contador = 0;
+    var suma;
+    localStorage.contador = contador;
+    document.getElementById('botonpasayuser').addEventListener('click', function(){
+        suma = parseInt(localStorage.contador);
+        suma = suma +30;
+        localStorage.contador = suma;
+        document.getElementById('incrementarpasayuser').innerHTML=""+localStorage.contador;
+    });
+
+
+    
+
+    var contador1 = 1;
+    var suma1;
+    sessionStorage.contador1 = contador1;
+    document.getElementById('multiplicarpasayuser').addEventListener('click', function(){
+        suma = parseInt(sessionStorage.contador1);
+        suma = suma*7;
+        sessionStorage.contador1 = suma;
+        document.getElementById('resultadopasayuser').innerHTML=""+sessionStorage.contador1;
+    });
+    /*
+
+    
+    if(contador){
+        parseInt(contador);
+         contador= contador + 30;  
+        localStorage.contador=contador;
+       }
+       else{
+           var contador = 0;
+           
+           contador = contador + 30;  
+        localStorage.contador=contador;
+       }*/
+       //document.getElementById('incrementarpasayuser').innerHTML=""+localStorage.contador;
+   
+   </script>
+</body>
+</html>

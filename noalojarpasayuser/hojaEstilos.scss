@@ -1,0 +1,106 @@
+@import 'hojaEstilosImportada.scss';
+
+%bordepasayuser{
+    border: 1px solid black;
+}
+
+%bordeazulpasayuser{
+    border: 1px solid blue;
+}
+
+@mixin bordeVerdepasayuser($color) {
+    border: 1px solid $color;
+}
+
+h1{
+    text-align: center;
+}
+header{
+    @extend %bordepasayuser;
+}
+figure{
+    width: 90%;
+    figcaption{
+        text-align: center;
+    }
+    
+}
+.imagenresponsivepasayuser{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.licenciapasayuser{
+   display: grid;
+   justify-content: center;
+}
+
+.seccion1pasayuser{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    min-height: 200px;
+
+    .pasayuserContenedor1ConBordeVerde{
+        @include bordeVerdepasayuser(green);
+        @include paddingpasayuser(20px);
+        picture{
+            img{
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+
+    .pasayuserContenedor2ConBordeAzul{
+        @extend %bordeazulpasayuser;
+        @include paddingpasayuser(20px);
+        display: grid;
+        button{
+            display: grid;
+            
+            justify-content: center;
+            align-content: center;
+            background-image: url("Recursos/Recurso5.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        p{
+            display: grid;
+            justify-content: center;
+        }
+    }
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    min-height: 200px;
+
+    .hijofooterpasayuser{
+        display: grid;
+        justify-content: center;
+            align-content: center;
+        .boton1pasayuser{
+           
+            display: grid;
+            width: 100px;
+            height: 100px;
+            
+            
+            background-image: url("Recursos/Recurso6.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        div{
+            text-align: center;
+        }
+
+        a{
+            display: grid;
+        }
+    }
+}

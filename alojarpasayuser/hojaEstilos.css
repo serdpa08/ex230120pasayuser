@@ -1,0 +1,87 @@
+header {
+  border: 1px solid black;
+}
+
+.seccion1pasayuser .pasayuserContenedor2ConBordeAzul {
+  border: 1px solid blue;
+}
+
+h1 {
+  text-align: center;
+}
+
+figure {
+  width: 90%;
+}
+figure figcaption {
+  text-align: center;
+}
+
+.imagenresponsivepasayuser {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.licenciapasayuser {
+  display: grid;
+  justify-content: center;
+}
+
+.seccion1pasayuser {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  min-height: 200px;
+}
+.seccion1pasayuser .pasayuserContenedor1ConBordeVerde {
+  border: 1px solid green;
+  padding: 20px;
+}
+.seccion1pasayuser .pasayuserContenedor1ConBordeVerde picture img {
+  width: 80%;
+  height: auto;
+}
+.seccion1pasayuser .pasayuserContenedor2ConBordeAzul {
+  padding: 20px;
+  display: grid;
+}
+.seccion1pasayuser .pasayuserContenedor2ConBordeAzul button {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-image: url("Recursos/Recurso5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.seccion1pasayuser .pasayuserContenedor2ConBordeAzul p {
+  display: grid;
+  justify-content: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  min-height: 200px;
+}
+footer .hijofooterpasayuser {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+footer .hijofooterpasayuser .boton1pasayuser {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background-image: url("Recursos/Recurso6.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .hijofooterpasayuser div {
+  text-align: center;
+}
+footer .hijofooterpasayuser a {
+  display: grid;
+}
+
+/*# sourceMappingURL=hojaEstilos.css.map */
