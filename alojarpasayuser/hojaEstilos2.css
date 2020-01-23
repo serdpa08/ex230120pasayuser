@@ -45,4 +45,22 @@ footer .contenedorfooterpasayuser3 a {
   text-align: center;
 }
 
-/*# sourceMappingURL=hojaestilos2.css.map */
+.contenedorgridpasayuser {
+  display: inline-grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 500px) {
+  .contenedorgridpasayuser {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/*# sourceMappingURL=hojaEstilos2.css.map */

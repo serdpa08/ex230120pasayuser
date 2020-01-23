@@ -64,3 +64,25 @@ footer{
         }
     }
 }
+
+
+.contenedorgridpasayuser{
+    display: inline-grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    grid-template-columns: auto auto auto;
+
+
+
+}
+
+@media (max-width: 500px){
+    .contenedorgridpasayuser{
+        display: grid;
+        position: fixed;
+        top: 0;
+        left: 0;
+        grid-template-columns: auto auto auto;
+}
+}

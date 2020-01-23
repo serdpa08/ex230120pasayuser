@@ -36,7 +36,19 @@
         </div>
     </section>
     <img width="200" height="200" id="imagenpasayuser" src="Recursos/Recurso10.jpg" alt="imagen para canvas" style="display: none;">
-
+    <div class="contenedorgridpasayuser">
+        <div class="capafija">
+            <button onclick="obtenerLocalizacion()">Obtener Localización</button>
+        </div>
+        <div class="capafija">
+            Latitud: 
+            <p id="idlati" class="latitudpasayuser"></p>
+        </div>
+        <div class="capafija">
+            Longitud
+            <p id="idlong" class="longitud"></p>
+        </div>
+    </div>
     <footer>
         <div class="contenedorfooterpasayuser1">
         <canvas id="canvas1"></canvas>
@@ -74,6 +86,15 @@ contexto.lineTo(140, 120);
 contexto.stroke();
 }
     </script>
-    
+<script>
+function obtenerLocalizacion() { 
+    elementoLat = document.getElementById('idlati'); 
+    elementoLong = document.getElementById('idlong'); 
+    if (navigator.geolocation) { 
+        navigator.geolocation.getCurrentPosition(mostrarPosicion);/*Pasamos como parámetro del nombre de la función a la que llamaremos cuando se obtenga la posición*/ 
+    } else {
+
+    elementoLat.innerHTML = "Tu navegador no soporta geolocalización"; elementoLong.innerHTML = "Tu navegador no soporta geolocalización"; } } function mostrarPosicion(posicion) { elementoLat.value = posicion.coords.latitude; elementoLong.value = posicion.coords.longitude; } </script>
+</script>
 </body>
 </html>
