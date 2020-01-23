@@ -1,0 +1,66 @@
+header{
+    
+    .imagen1pasayuser{
+        width: 50%;
+        height: auto;
+    }
+    
+}
+
+.licenciapasayuser{
+    display: grid;
+    justify-content: center;
+}
+
+
+.section{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .contenedorpasayuser1{
+        justify-content: center;
+    }
+
+    .contenedorpasayuser2{
+        
+        &__boton{
+            display: grid;
+            grid-template-columns: 100%;
+            border: 1px solid blue;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+
+    .contenedorfooterpasayuser1{
+        canvas{
+            width: 90%;
+            height: 90%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    }
+
+    .contenedorfooterpasayuser2{
+        button{
+            background-image: url("Recursos/Recurso9.gif");
+            height: 60%;
+            width: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .contenedorfooterpasayuser3{
+        a{
+            display: block;
+            text-align: center;
+        }
+    }
+}

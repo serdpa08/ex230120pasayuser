@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen 23-01-2020 / pasayuser / Ej2</title>
+    <link rel="stylesheet" href="hojaEstilos2.css">
+</head>
+<body>
+
+    <header>
+        <img class="imagen1pasayuser" src="Recursos/logo.png" alt="logo del ejercicio 2 pasayuser" title="logo ejercicio 2 pasayuser">
+        <div>
+        <a rel="license" class="licenciapasayuser" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+        </div>
+    </header>
+
+
+    <section class="section">
+        <div class="contenedorpasayuser1">
+            <video id=video1pasayuser width=300 height=200 autoplay=autoplay controls loop=loop>
+                <source src=Recursos/Recurso8.mp4 type=video/mp4> 
+                    <source src=Recursos/Recurso8.ogv type=video/ogg> 
+                        <source src=Recursos/Recurso8.webm type=video/webm> 
+                            Tu navegador no soporta esta etiqueta HTML5 
+                        </video>
+        </div>
+
+        <div class="contenedorpasayuser2">
+            <button class="contenedorpasayuser2__boton" onclick="document.getElementById('video1pasayuser').play()">Reproducir el Vídeo</button> 
+            <button class="contenedorpasayuser2__boton" onclick="document.getElementById('video1pasayuser').pause()">Pausar el Vídeo</button> 
+            <button class="contenedorpasayuser2__boton" onclick="document.getElementById('video1pasayuser').volume+=0.1">Aumentar el Volumen del Vídeo</button>
+
+        <button class="contenedorpasayuser2__boton" onclick="document.getElementById('video1pasayuser').volume-=0.1">Disminuir el Volumen del Vídeo</button>
+        </div>
+    </section>
+    <img width="200" height="200" id="imagenpasayuser" src="Recursos/Recurso10.jpg" alt="imagen para canvas" style="display: none;">
+
+    <footer>
+        <div class="contenedorfooterpasayuser1">
+        <canvas id="canvas1"></canvas>
+        </div>
+        <div class="contenedorfooterpasayuser2">
+            <button onclick="dibujar()"></button>
+        </div>
+        <div class="contenedorfooterpasayuser3">
+            <a href="pas_ayu_ser_230120_ej1.html">Ir al ejercicio 1</a>
+        </div>
+    </footer>
+
+    <script>
+function dibujar(){  
+
+var canvas = document.getElementById('canvas1');
+var contexto = canvas.getContext("2d");
+var imagen = document.getElementById('imagenpasayuser');
+contexto.drawImage(imagenpasayuser, 5, 5);
+contexto.moveTo(120, 120);
+contexto.lineTo(140, 120);
+contexto.moveTo(120, 120);
+contexto.lineTo(120, 140);
+contexto.moveTo(120, 140);
+contexto.lineTo(140, 140);
+contexto.moveTo(140, 140);
+contexto.lineTo(140, 120);
+
+
+contexto.moveTo(120, 120);
+contexto.lineTo(130, 110);
+contexto.moveTo(130, 110);
+contexto.lineTo(140, 120);
+
+contexto.stroke();
+}
+    </script>
+    
+</body>
+</html>
